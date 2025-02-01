@@ -16,7 +16,7 @@ function Header() {
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        `duration-200 ${isActive ? "text-[#00abf0] border-b border-[#00abf0]" : "text-white"} hover:text-[#00abf0]`
+                                        `duration-200 ease-in-out ${isActive ? "text-[#00abf0] border-b border-[#00abf0]" : "text-white"} hover:text-[#00abf0]`
                                     }
                                 >
                                     Home
