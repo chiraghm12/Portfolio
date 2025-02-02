@@ -22,12 +22,12 @@ function Skills() {
         <>
             <div className="h-full w-full overflow-auto">
                 <div className="text-white mt-5">
-                    <ul className="flex justify-between items-center gap-2 w-3/5 m-auto bg-[#00abf0] rounded-xl p-3">
+                    <ul className="flex justify-between items-center gap-2 w-3/5 m-auto bg-[#00abf0] rounded-xl xl:p-2 2xl:p-3">
                         {skillTabs.map((tab) => (
                             <li key={tab.id}>
                                 <button
                                     onClick={() => selectedSkillTab(tab.id)}
-                                    className={`p-2 rounded-lg duration-300 ease-in-out transition-all px-5 text-lg hover:bg-white hover:text-[#081b29] ${skillTab === tab.id ? "bg-white text-[#081b29]" : "bg-transparent, text-white"
+                                    className={`xl:p-1 2xl:p-2 rounded-lg duration-300 ease-in-out transition-all xl:text-sm 2xl:text-lg hover:bg-white hover:text-[#081b29] ${skillTab === tab.id ? "bg-white text-[#081b29]" : "bg-transparent text-white"
                                         }`}
                                 >
                                     {tab.label}
