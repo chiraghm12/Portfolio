@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Navigate } from 'react-router-dom'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
@@ -13,6 +14,7 @@ import Contact from './components/Contact/Contact.jsx'
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<Layout />}>
+            <Route index element={<Navigate to="/home" replace />} /> 
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/skills' element={<Skills />} />
