@@ -6,7 +6,7 @@ function Header() {
             <div className="mx-auto xl:px-32 2xl:px-40 xl:py-3 2xl:py-5">
                 <div className="flex flex-wrap justify-between items-center">
                     <div className="text-white xl:text-3xl 2xl:text-6xl font-sans font-bold tracking-tighter">
-                        <NavLink to="/">
+                        <NavLink to="/home">
                             <h1>C<span className="text-[#00abf0]">M</span></h1>
                         </NavLink>
                     </div>
