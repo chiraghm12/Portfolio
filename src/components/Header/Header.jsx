@@ -30,7 +30,7 @@ function Header() {
                     </nav>
                     <div className="flex gap-x-5">
                         <NavLink to="https://github.com/chiraghm12" target="_blank">
-                            <img className=" 2xl:mt-[3px] xl:mt-[1px] xl:w-[30px] xl:h-[25px] 2xl:w-[40px] 2xl:h-[35px]" src="/github_icon.svg" alt="github" />
+                            <img className=" 2xl:mt-[3px] xl:mt-[1px] xl:w-[30px] xl:h-[25px] 2xl:w-[38px] 2xl:h-[33px]" src="/github_icon.svg" alt="github" />
                         </NavLink>
                         <NavLink to="https://www.linkedin.com/in/chirag-mandaviya-4b5b971ab/" target="_blank">
                             <img className="2xl:w-[40px] 2xl:h-[40px] xl:w-[30px] xl:h-[30px]" src="/linkedin_icon.svg" alt="linkedin" />
