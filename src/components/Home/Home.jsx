@@ -35,7 +35,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/2 xl:p-10 2xl:pl-32">
+                    <div className="w-1/2 xl:px-10 2xl:pl-32">
                         <div className="w-5/6 h-5/6">
                             <div className="xl:p-20 2xl:p-20">
                                 <img src="/src/assets/profile_photo.png" alt="Profile Photo" className="rounded-full opacity-95 duration-300 shadow-[0px_0px_50px_0px_rgba(0,171,240,0.50)] hover:shadow-[0px_0px_50px_20px_rgba(0,171,240,0.80)] hover:opacity-100" />
