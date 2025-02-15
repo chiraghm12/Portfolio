@@ -21,7 +21,10 @@ const router = createBrowserRouter(
             <Route path='/experience' element={<Experience />} />
             <Route path='/contact' element={<Contact />} />
         </Route>
-    )
+    ),
+    {
+        basename:'/Portfolio'
+    }
 )
 
 createRoot(document.getElementById('root')).render(
