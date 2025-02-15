@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { easeInOut, motion } from "framer-motion";
-
+import profilePhoto from './../../assets/profile_photo.png'
 function About() {
     return (
         <>
@@ -13,7 +13,7 @@ function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, ease: easeInOut }} className="xl:px-24 xl:py-5 2xl:px-36 2xl:py-10 w-1/2">
                         <div className="w-2/3 h-2/3 xl:ml-20 2xl:ml-20">
-                            <img src="/src/assets/profile_photo.png" alt="Profile Photo" className="rounded-full opacity-95 duration-300 shadow-[0px_0px_50px_0px_rgba(0,171,240,0.50)] hover:shadow-[0px_0px_50px_20px_rgba(0,171,240,0.80)] hover:opacity-100" />
+                            <img src={profilePhoto} alt="Profile Photo" className="rounded-full opacity-95 duration-300 shadow-[0px_0px_50px_0px_rgba(0,171,240,0.50)] hover:shadow-[0px_0px_50px_20px_rgba(0,171,240,0.80)] hover:opacity-100" />
                         </div>
                     </motion.div>
                     <motion.div initial={{ opacity: 0, x: 50 }}

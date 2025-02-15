@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { easeInOut, motion } from "framer-motion";
+import sadnaLogo from './../../assets/sadna.svg';
+import crestLogo from './../../assets/crest_data_logo.jpg'
 
 function Experience() {
     return (
@@ -54,7 +56,7 @@ function Experience() {
                         <div className="xl:p-10 2xl:p-24">
                             <div className="inline-block xl:py-10 xl:px-20 2xl:px-20 2xl:py-10 rounded-xl ">
                                 <NavLink to="https://scriptalldna.com/" target="_blank">
-                                    <img className="bg-white rounded-xl xl:p-3 2xl:p-5 shadow-[0px_0px_20px_10px_rgba(0,171,240,0.50)]" src="/public/sadna.svg" alt="itech cloud" />
+                                    <img className="bg-white rounded-xl xl:p-3 2xl:p-5 shadow-[0px_0px_20px_10px_rgba(0,171,240,0.50)]" src={sadnaLogo} alt="itech cloud" />
                                 </NavLink>
                             </div>
                             <div className="text-white font-sans xl:px-20 2xl:px-20 xl:py-1 2xl:py-5">
@@ -85,7 +87,7 @@ function Experience() {
                         <div className="xl:p-10 2xl:p-24">
                             <div className="inline-block xl:py-10 xl:px-20 2xl:px-20 2xl:py-10 rounded-xl">
                                 <NavLink to="https://www.crestdata.ai/" target="_blank">
-                                    <img className="bg-white rounded-xl xl:h-24 2xl:h-32 shadow-[0px_0px_20px_10px_rgba(0,171,240,0.50)]" src="/public/crest_data_logo.jpg" alt="crest data systems" />
+                                    <img className="bg-white rounded-xl xl:h-24 2xl:h-32 shadow-[0px_0px_20px_10px_rgba(0,171,240,0.50)]" src={crestLogo} alt="crest data systems" />
                                 </NavLink>
                             </div>
                             <div className="text-white font-sans xl:px-20 2xl:px-20 xl:py-1 2xl:py-5">
