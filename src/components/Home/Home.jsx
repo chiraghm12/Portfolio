@@ -15,7 +15,7 @@ function Home() {
 
     return (
         <>
-            <div className="h-full w-full overflow-auto">
+            <div className="h-full w-full overflow-auto" style={{ scrollBehavior: "smooth", scrollbarWidth: "none" }}>
                 <div className="flex justify-between items-center gap-x-2 mt-7">
                     <motion.div className="text-white w-1/2"
                         initial={{ opacity: 0, x: -50 }}

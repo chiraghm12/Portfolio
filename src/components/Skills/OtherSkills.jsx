@@ -1,9 +1,12 @@
+import { easeInOut, motion } from "framer-motion";
 
 function OtherSkills() {
   return (
     <>
       <div className="relative xl:px-64 2xl:px-80 xl:py-10 2xl:py-20">
-        <div className="flex flex-wrap columns-4 xl:gap-y-5 2xl:gap-y-10 xl:gap-x-7 2xl:gap-x-10">
+        <motion.div initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: easeInOut }} className="flex flex-wrap columns-4 xl:gap-y-5 2xl:gap-y-10 xl:gap-x-7 2xl:gap-x-10">
           {/* RestApi*/}
           <div className="xl:w-48 2xl:w-56 xl:h-44 2xl:h-52 p-2">
             <div className="xl:w-35 2xl:w-40 xl:h-35 2xl:h-40 m-auto">
@@ -53,7 +56,7 @@ function OtherSkills() {
             </div>
             <div className="text-center text-white font-bold xl:text-xl 2xl:text-2xl xl:mt-3 2xl:mt-0">Salesforce</div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   )

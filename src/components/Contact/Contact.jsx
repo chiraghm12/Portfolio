@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import { easeInOut, motion } from "framer-motion";
 
 function Contact() {
 
@@ -26,10 +27,14 @@ function Contact() {
     return (
         <>
             <div className="h-full overflow-auto p-4 text-white text-center">
-                <div className="xl:px-20 2xl:px-20 xl:py-5 2xl:py-10 text-center font-bold xl:text-3xl 2xl:text-5xl">
+                <motion.div initial={{ opacity: 0, y: -50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: easeInOut }} className="xl:px-20 2xl:px-20 xl:py-5 2xl:py-10 text-center font-bold xl:text-3xl 2xl:text-5xl">
                     CONTACT <span className="text-[#00abf0]">ME</span>
-                </div>
-                <div className="xl:px-60 2xl:px-96 font-sans xl:text-xs 2xl:text-base">
+                </motion.div>
+                <motion.div initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: easeInOut }} className="xl:px-60 2xl:px-96 font-sans xl:text-xs 2xl:text-base">
                     <form className="xl:px-32 2xl:px-32" onSubmit={handleSubmit}>
                         <div className="flex flex-wrap xl:gap-3 2xl:gap-4">
                             <div className="flex flex-col xl:gap-1 2xl:gap-2 w-[calc(50%-8px)]">
@@ -57,7 +62,7 @@ function Contact() {
                             </button>
                         </div>
                     </form>
-                </div>
+                </motion.div>
             </div>
         </>
     )

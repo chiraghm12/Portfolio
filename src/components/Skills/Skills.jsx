@@ -1,8 +1,9 @@
-import { useState } from "react"
-import ProgrammingLanguageSkills from "./ProgrammingLanguageSkills"
-import WebDevelopmentSkills from "./WebDevelopmentSkills"
-import ToolsSkills from "./ToolsSkills"
-import OtherSkills from "./OtherSkills"
+import { useState } from "react";
+import { easeInOut, motion } from "framer-motion";
+import ProgrammingLanguageSkills from "./ProgrammingLanguageSkills";
+import WebDevelopmentSkills from "./WebDevelopmentSkills";
+import ToolsSkills from "./ToolsSkills";
+import OtherSkills from "./OtherSkills";
 
 function Skills() {
 
@@ -22,7 +23,9 @@ function Skills() {
         <>
             <div className="h-full w-full overflow-auto">
                 <div className="text-white mt-5">
-                    <ul className="flex justify-between items-center gap-2 w-3/5 m-auto bg-[#00abf0] rounded-xl xl:p-2 2xl:p-3">
+                    <motion.ul initial={{ opacity: 0, y: -50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: easeInOut }} className="flex justify-between items-center gap-2 w-3/5 m-auto bg-[#00abf0] rounded-xl xl:p-2 2xl:p-3">
                         {skillTabs.map((tab) => (
                             <li key={tab.id}>
                                 <button
@@ -34,7 +37,7 @@ function Skills() {
                                 </button>
                             </li>
                         ))}
-                    </ul>
+                    </motion.ul>
 
                     {/* Render only the selected skill component */}
                     <div className="mt-5">
